@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Bar() {
   return (
-    <div className="w-full flex flex-row items-center justify-between px-10 py-4 border-b border-gray-300 bg-white shadow-sm">
+   <div className="w-full flex flex-row items-center justify-between px-10 py-4 border-b border-gray-300 bg-white shadow-sm sticky top-0 z-50">
       {/* Logo */}
       <h1 className="font-bold text-2xl text-green-800 tracking-wide">
         THEDisaster <span className="block -mt-1">RELIEF</span>
@@ -16,7 +16,7 @@ export default function Bar() {
           to="/dashboard"
           className={({ isActive }) =>
             isActive
-              ? "text-lg font-bold text-orange-400 border-b-2 border-orange-400"
+              ? "text-lg font-bold  border-b-4 border-green-700"
               : "text-lg text-black font-semibold  transition hover:border-b-4 border-green-700"
           }
         >
@@ -24,41 +24,49 @@ export default function Bar() {
         </NavLink>
 
         <NavLink
-          to="/history"
-          className={({ isActive }) =>
-            isActive
-              ? "text-lg font-bold text-orange-400"
-              : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
-          }
-        >
-          HISTORY
-        </NavLink>
+  to="/history"
+  className={({ isActive }) =>
+    isActive
+      ? "text-lg font-bold border-b-4 border-green-700"
+      : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
+  }
+>
+  HISTORY
+</NavLink>
 
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive
-              ? "text-lg font-bold text-orange-400"
-              : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
-          }
-        >
-          CONTACT
-        </NavLink>
+<NavLink
+  to="/contact"
+  className={({ isActive }) =>
+    isActive
+      ? "text-lg font-bold border-b-4 border-green-700"
+      : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
+  }
+>
+  CONTACT
+</NavLink>
 
-        <NavLink
-          to="/aboutus"
-          className={({ isActive }) =>
-            isActive
-              ? "text-lg font-bold text-orange-400"
-              : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
-          }
-        >
-          ABOUT US
-        </NavLink>
+<NavLink
+  to="/aboutus"
+  className={({ isActive }) =>
+    isActive
+      ? "text-lg font-bold border-b-4 border-green-700"
+      : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
+  }
+>
+  ABOUT US
+</NavLink>
 
-        <button className="text-lg text-black font-semibold hover:border-b-4 border-green-700 transition">
-          LOGOUT
-        </button>
+  <NavLink
+  to="/logout"
+  className={({ isActive }) =>
+    isActive
+      ? "text-lg font-bold border-b-4 border-green-700"
+      : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
+  }
+>
+  LOGOUT
+</NavLink>
+
       </div>
 
       {/* Icons Section */}
