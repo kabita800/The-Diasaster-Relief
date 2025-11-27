@@ -11,7 +11,7 @@ export default function Bar() {
       </h1>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-8 pl-130">
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
