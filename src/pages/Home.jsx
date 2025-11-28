@@ -1,4 +1,5 @@
 import React from "react"
+import heroImg from "/src/assets/rescue-team-navigating-flooded-residential-260nw-2511305493.jpg";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
     }}
   >
     <img
-      src="/src/assets/rescue-team-navigating-flooded-residential-260nw-2511305493.jpg"
+      src={heroImg}
       alt="hero"
       className="w-full h-full object-cover"
     />
