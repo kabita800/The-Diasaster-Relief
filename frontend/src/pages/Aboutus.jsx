@@ -12,7 +12,7 @@ const Aboutus = () => {
           <div class="text-center max-w-3xl mx-auto mb-12 px-6">
             <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-white">
-              <span class="font-semibold text-white"> BOOKVault</span> was
+              <span class="font-semibold text-white"> THEDisasterRelief</span> was
               created to make borrowing books simple for students and community
               members. It helps track books, borrowing history, and supports
               librarians in managing the catalog efficiently. This Library
