@@ -1,7 +1,10 @@
 import React from "react"
 import heroImg from "/src/assets/rescue-team-navigating-flooded-residential-260nw-2511305493.jpg";
+import { useState } from "react";
+
 
 export default function Home() {
+    const [readMore, setReadMore] = useState(false);
   return (
    <div className="w-full min-h-screen">
 
@@ -55,20 +58,64 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pr-20 pl-20 pb-20 pt-0 mt-10 ">
 
     <div className="bg-white shadow-lg rounded-xl border-t-4 border-green-500 p-6 h-[50vh]">
-  <h3 className="text-xl font-bold text-green-700">PLANNER</h3>
-  <p className="mt-3 text-gray-600">Lorem ipsum dolor sit amet.</p>
-</div>
+      <h3 className="text-xl font-bold text-green-700">MEDICAL KIT</h3>
+
+      <p className="mt-3 text-gray-600 justify">
+        A medical kit is a crucial part of disaster relief because it provides
+        immediate first aid to injured or sick victims before professional help
+        arrives.
+
+        {!readMore && (
+          <button
+            onClick={() => setReadMore(true)}
+            className="ml-2 text-green-600 font-semibold hover:underline"
+          >
+            Read More
+          </button>
+        )}
+
+        {readMore && (
+          <>
+            <span className="block mt-2">
+              It includes essential supplies like bandages, antiseptics, gloves,
+              pain relievers, and basic medicines. During disasters, access to
+              hospitals may be limited, so a well-prepared medical kit helps
+              prevent infections, control bleeding, and stabilize patients.
+              This ensures faster recovery and reduces the risk of serious
+              complications.
+            </span>
+
+            <button
+              onClick={() => setReadMore(false)}
+              className="mt-2 text-green-600 font-semibold hover:underline"
+            >
+              Read Less
+            </button>
+          </>
+        )}
+      </p>
+    </div>
 
 
     <div className="bg-white shadow-lg rounded-xl  border-t-4 border-green-500 p-6">
-      <h3 className="text-xl font-bold text-green-700">COURSE</h3>
-      <p className="mt-3 text-gray-600">Lorem ipsum dolor sit amet.</p>
+      <h3 className="text-xl font-bold text-green-700">CLOTHES</h3>
+      <p className="mt-3 text-gray-600">Clothes are an important relief item because disasters 
+        often destroy homes and personal belongings. Providing clean and appropriate clothing 
+        helps victims stay warm, dry, and comfortable in harsh conditions. It also supports
+         hygiene and dignity, especially for children, women, and the elderly. Proper clothing 
+         distribution, according to size and weather, helps protect survivors from cold, heat, 
+         and environmental exposure while they recover.</p>
       
     </div>
 
     <div className="bg-white shadow-lg rounded-xl  border-t-4 border-green-500 p-6">
-      <h3 className="text-xl font-bold text-green-700">RADIO</h3>
-      <p className="mt-3 text-gray-600">Lorem ipsum dolor sit amet.</p>
+      <h3 className="text-xl font-bold text-green-700">FOOD</h3>
+      <p className="mt-3 text-gray-600">Food is one of the most essential resources in disaster management.
+         Many victims lose access to kitchens, markets, and clean water, 
+         making them vulnerable to hunger and malnutrition. Disaster relief food packages
+          usually include ready-to-eat meals, dry snacks, rice, lentils, canned goods, 
+          and drinking water. Providing safe, nutritious, and easily distributable food ensures 
+          that individuals and families can survive until normal food supply systems are restored.</p>
      
     </div>
 
