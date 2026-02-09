@@ -56,16 +56,7 @@ export default function Bar() {
   ABOUT US
 </NavLink>
 
-  <NavLink
-  to="/logout"
-  className={({ isActive }) =>
-    isActive
-      ? "text-lg font-bold border-b-4 border-green-700"
-      : "text-lg text-black font-semibold hover:border-b-4 border-green-700 transition"
-  }
->
-  LOGOUT
-</NavLink>
+
 
       </div>
 
