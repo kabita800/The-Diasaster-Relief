@@ -2,7 +2,7 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div className="flex h-115 bg-gradient-to-r from-green-400 to-green-600">
+    <div className="flex h-115 bg-teal-700 mb-150">
       {/* nav bar */}
 
       <div className="flex-1 flex flex-col pt-10">
@@ -12,18 +12,18 @@ const Aboutus = () => {
           <div class="text-center max-w-3xl mx-auto mb-12 px-6">
             <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-white">
-              <span class="font-semibold text-white"> THEDisasterRelief</span> was
-              created to make borrowing books simple for students and community
-              members. It helps track books, borrowing history, and supports
-              librarians in managing the catalog efficiently. This Library
-              Management System is designed to help small libraries, schools,
-              and community centers manage their book catalog and borrowing
-              process. Borrowers can browse and borrow books easily, while
-              librarians can efficiently track records and maintain the catalog.
-              Our mission is to make reading accessible to everyone and provide
-              a seamless experience for both readers and librarians. We aim to
-              promote learning, knowledge sharing, and convenience through
-              technology.
+              <span class="font-semibold text-white"> THEDisasterRelief</span>{" "}
+              was created to make borrowing books simple for students and
+              community members. It helps track books, borrowing history, and
+              supports librarians in managing the catalog efficiently. This
+              Library Management System is designed to help small libraries,
+              schools, and community centers manage their book catalog and
+              borrowing process. Borrowers can browse and borrow books easily,
+              while librarians can efficiently track records and maintain the
+              catalog. Our mission is to make reading accessible to everyone and
+              provide a seamless experience for both readers and librarians. We
+              aim to promote learning, knowledge sharing, and convenience
+              through technology.
             </p>
           </div>
 
@@ -60,66 +60,57 @@ const Aboutus = () => {
           </div>
 
           {/* team member */}
-          <div className="m-25 ">
+          <div className="ml-25 mr-25 ">
             <div className=" ">
               <h1 className="mt-6 font-bold text-4xl text-center text-gray-800 ">
                 {" "}
                 Meet Our Team
               </h1>
-              <p className="text-center mb-15 italic">
+              <p className="text-center mb-10 italic">
                 The people powering our vision
               </p>
             </div>
 
-            <div className="grid grid-cols-4 pl-14 pb-4 ">
-              <div className="bg-gray-100 border border-gray-300 border-2 text-black text-bold text-lg rounded-full shadow-2xl w-70 h-30 flex items-center gap-4 p-4 hover:bg-green-700 hover:scale-105 text-black hover:text-white">
+            <div className="grid grid-cols-4 pl-14 pb-4 gap-6">
+              {/* Team Member 1 */}
+              <div className="bg-white shadow-2xl border border-gray-200 rounded-xl w-60 p-4 hover:scale-105 transition-transform text-center">
                 <img
-                  src="/"
-                  className="rounded-full w-26 h-26 p-1 object-cover  border border-white border-2 "
+                  src="/src/assets/WhatsApp Image 2026-02-11 at 13.23.06.jpeg"
+                  className="w-full h-40 object-cover rounded-t-xl mb-3"
                 />
-                <div className=" justify-center items-center">
-                  <h1 className="font-bold">Kabita Giri</h1>
-                  <p>Frontend Manager</p>
-                </div>
+                <h1 className="font-bold text-lg">Kabita Giri</h1>
+                <p className="text-gray-600 text-sm">Frontend Manager</p>
               </div>
 
-              <div className="bg-gray-100 border border-gray-300 border-2 text-bold text-lg rounded-full shadow-2xl w-75 h-30 flex items-center gap-4 p-4 hover:bg-green-700 hover:scale-105 text-black hover:text-white">
+              {/* Team Member 2 */}
+              <div className="bg-white shadow-2xl border border-gray-200 rounded-xl w-60 p-4 hover:scale-105 transition-transform text-center">
                 <img
-                  src="/"
-                  className="rounded-full w-26 h-26 p-1 object-cover border border-white border-2 "
+                  src="/src/assets/WhatsApp Image 2026-02-11 at 13.27.26.jpeg"
+                  className="w-full h-40 object-cover rounded-t-xl mb-3"
                 />
-                <div className=" justify-center items-center ">
-                  <h1 className="font-bold">Anil Kumar Shah</h1>
-                  <p className="">Backend Manager</p>
-                </div>
+                <h1 className="font-bold text-lg">Anil Kumar Shah</h1>
+                <p className="text-gray-600 text-sm">Backend Manager</p>
               </div>
 
-
-              <div className="bg-gray-100 border border-gray-300 border-2 text-bold text-lg rounded-full shadow-2xl w-72 h-30 flex items-center gap-4 p-4 hover:bg-green-700 hover:scale-105 text-black hover:text-white">
+              {/* Team Member 3 */}
+              <div className="bg-white shadow-2xl border border-gray-200 rounded-xl w-60 p-4 hover:scale-105 transition-transform text-center">
                 <img
-                  src="/"
-                  className="rounded-full w-26 h-26 p-1 object-cover border border-white border-2 "
+                  src="/src/assets/WhatsApp Image 2026-02-11 at 13.26.02.jpeg"
+                  className="w-full h-40 object-cover rounded-t-xl mb-3"
                 />
-                <div className=" justify-center items-center ">
-                  <h1 className="font-bold">Bibek Seluwal</h1>
-                  <p className="">Database Manager</p>
-                </div>
+                <h1 className="font-bold text-lg">Bibek Seluwal</h1>
+                <p className="text-gray-600 text-sm">Database Manager</p>
               </div>
 
-              <div className="bg-gray-100 border border-gray-300 border-2 text-bold text-lg rounded-full shadow-2xl w-72 h-30 flex items-center gap-4 p-4 hover:bg-green-700 hover:scale-105 text-black hover:text-white">
+              {/* Team Member 4 */}
+              <div className="bg-white shadow-2xl border border-gray-200 rounded-xl w-60 p-4 hover:scale-105 transition-transform text-center">
                 <img
-                  src="/"
-                  className="rounded-full w-26 h-26 p-1 object-cover border border-white border-2 "
+                  src="/src/assets/WhatsApp Image 2026-02-11 at 13.28.44.jpeg"
+                  className="w-full h-40 object-cover rounded-t-xl mb-3"
                 />
-                <div className=" justify-center items-center ">
-                  <h1 className="font-bold">Khum Bahadur Shrestha</h1>
-                  <p className="">UI/UX designer</p>
-                </div>
+                <h1 className="font-bold text-lg">Khum Bahadur Shrestha</h1>
+                <p className="text-gray-600 text-sm">UI/UX Designer</p>
               </div>
-
-
-
-
             </div>
           </div>
         </section>
@@ -129,4 +120,3 @@ const Aboutus = () => {
 };
 
 export default Aboutus;
-

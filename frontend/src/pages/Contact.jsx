@@ -21,18 +21,18 @@ const Contact = () => {
 
   return (
     <div className="h-full w-full">
-      <div className="relative bg-gradient-to-r from-green-400 to-green-600 w-full h-[400px]">
-        <h1 className="font-bold text-5xl pl-8 text-white items-center justify-center pt-30">
+      <div className="relative bg-teal-700 w-full h-[400px]">
+        <h1 className="font-bold text-5xl pl-8 text-white text-center pt-20">
           Get in Touch
         </h1>
-        <p className="pl-8 text-white">
+        <p className="pl-8 text-white text-center italic mb-20">
           Building Connections, One Message at a Time
         </p>
 
         {/* main Box */}
         <div
           className="absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[70%]
-                  bg-white w-[900px] h-[650px] grid grid-cols-2 p-6 shadow-xl rounded-xl"
+                  bg-white w-[900px] h-[650px] grid grid-cols-2 p-6 shadow-xl rounded-xl mb-10 mt-10" 
         >
           {/* Left - Form */}
           <form
@@ -100,7 +100,7 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full bg-green-700 text-white px-4 py-3 rounded-lg shadow hover:bg-green-800 transition"
+                className="w-full bg-teal-600 text-white px-4 py-3 rounded-lg shadow hover:bg-green-800 transition"
               >
                 Submit
               </button>
@@ -108,26 +108,26 @@ const Contact = () => {
           </form>
 
           {/* Right - Contact Info */}
-          <div className="bg-red-500 text-white rounded-xl p-6 space-y-3">
+          <div className="bg-teal-600 text-white rounded-xl p-6 space-y-3">
             
-           <div className="h-100vh w-full bg-red-300 rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full bg-teal-500 rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">police Emergency hotline</p>
             <p className="text-center pb-3 text-black text-2xl">100/101</p>
            </div>
 
-          <div className="h-100vh w-full bg-red-300 rounded-lg border-2 border-black shadow-xl">
+          <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">Ambulance</p>
             <p className="text-center pb-3 text-black text-2xl">9873637221</p>
            </div>
 
 
-           <div className="h-100vh w-full bg-red-300 rounded-lg border-2 border-black shadow-xl">
-            <p className="p-3 text-2xl text-center text-black font-bold">Fire</p>
+           <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
+            <p className="p-3 text-2xl text-center text-black font-bold">Fire Brigade</p>
             <p className="text-center pb-3 text-black text-2xl">9836243541</p>
            </div>
            
 
-           <div className="h-100vh w-full bg-red-300 rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">Rescue Teams</p>
             <p className="text-center pb-3 text-black text-2xl">9812876543</p>
            </div>
@@ -143,9 +143,11 @@ const Contact = () => {
 
         </div>
       </div>
+      <footer className="w-full bg-white text-white text-center py-6 mt-[400px]">
+    {/* your existing footer content */}
+  </footer>
     </div>
   );
 };
 
 export default Contact;
-
