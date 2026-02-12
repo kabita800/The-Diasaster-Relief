@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div className="h-full w-full">
       <div className="relative bg-teal-700 w-full h-[400px]">
-        <h1 className="font-bold text-5xl pl-8 text-white text-center pt-20">
+        <h1 className="font-bold text-5xl pl-8 text-white text-center pt-15">
           Get in Touch
         </h1>
         <p className="pl-8 text-white text-center italic mb-20">
@@ -37,13 +37,13 @@ const Contact = () => {
           {/* Left - Form */}
           <form
             onSubmit={handleSubmit}
-            className="max-w-lg mx-auto bg-white p-8 rounded-xl shadow space-y-6"
+            className="max-w-lg mx-auto bg-white p-8 mb-30 rounded-xl shadow space-y-6 "
           >
             {/* Heading */}
             <h3 className="text-2xl font-bold text-gray-800 text-center">
               Send Us a Message
             </h3>
-            <p className="text-gray-600 text-center text-sm">
+            <p className="text-gray-600 text-center text-sm italic">
               We’d love to hear from you! Fill out the form below and we’ll get
               back to you soon.
             </p>
@@ -100,7 +100,7 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full bg-teal-600 text-white px-4 py-3 rounded-lg shadow hover:bg-green-800 transition"
+                className="w-full bg-teal-600 text-white px-4 py-3 rounded-lg shadow hover:bg-teal-800 transition"
               >
                 Submit
               </button>
@@ -108,31 +108,31 @@ const Contact = () => {
           </form>
 
           {/* Right - Contact Info */}
-          <div className="bg-teal-600 text-white rounded-xl p-6 space-y-3">
+          <div className="text-white rounded-xl p-6 space-y-3">
             
-           <div className="h-100vh w-full bg-teal-500 rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">police Emergency hotline</p>
             <p className="text-center pb-3 text-black text-2xl">100/101</p>
            </div>
 
-          <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
+          <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">Ambulance</p>
             <p className="text-center pb-3 text-black text-2xl">9873637221</p>
            </div>
 
 
-           <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full   rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">Fire Brigade</p>
             <p className="text-center pb-3 text-black text-2xl">9836243541</p>
            </div>
            
 
-           <div className="h-100vh w-full bg-teal-500  rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
             <p className="p-3 text-2xl text-center text-black font-bold">Rescue Teams</p>
             <p className="text-center pb-3 text-black text-2xl">9812876543</p>
            </div>
            
-            <div>
+            <div className="text-black">
               <p>If you have any queries, feel free to contact us via email or phone.</p>
               <p>Email: Thedisasterrrelief@gmail.com</p>
               <p>Phone: +977 9813456782</p>

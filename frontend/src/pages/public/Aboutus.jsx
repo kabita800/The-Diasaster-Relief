@@ -2,14 +2,14 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div className="flex h-115 bg-teal-700 mb-150">
+    <div className="flex h-100 bg-teal-700 mb-125 mt-0 pb-150">
       {/* nav bar */}
 
-      <div className="flex-1 flex flex-col pt-10">
+      <div className="flex-1 flex flex-col pt-20">
         {/* main content */}
 
         <section id="about" class="">
-          <div class="text-center max-w-3xl mx-auto mb-12 px-6">
+          <div class="text-center max-w-3xl mx-auto mb-20 px-6 ">
             <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-white">
               <span class="font-semibold text-white"> THEDisasterRelief</span>{" "}
@@ -62,9 +62,9 @@ const Aboutus = () => {
           {/* team member */}
           <div className="ml-25 mr-25 ">
             <div className=" ">
-              <h1 className="mt-6 font-bold text-4xl text-center text-gray-800 ">
+              <h1 className="mt-10 font-bold text-4xl text-center text-gray-800 ">
                 {" "}
-                Meet Our Team
+                Meet Our <span className="text-teal-700">Team</span>
               </h1>
               <p className="text-center mb-10 italic">
                 The people powering our vision
