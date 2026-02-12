@@ -14,24 +14,25 @@ export default function Sidebar() {
 
   return (
     <aside className="w-64 bg-white border-r shadow-sm flex flex-col">
-      <div className="p-6 font-bold text-xl text-teal-700">Dashboard</div>
-      <ul className="flex-1 px-4 space-y-2">
-        {links.map((link) => (
-          <li key={link.name}>
-            <Link
-              to={link.path}
-              className={`block px-4 py-2 rounded-lg transition
-                ${
-                  activeItem === link.path
-                    ? "bg-teal-700 text-white font-semibold"
-                    : "hover:bg-gray-100 text-gray-800"
-                }`}
-            >
-              {link.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="p-6 font-bold text-xl text-teal-700 ">Dashboard</div>
+     <ul className="flex-1 px-4 space-y-2 flex flex-col items-start">
+  {links.map((link) => (
+    <li key={link.name}>
+      <Link
+        to={link.path}
+        className={`inline-flex w-fit px-12 py-2 rounded-lg transition 
+          ${
+            activeItem === link.path
+              ? "bg-teal-700 text-white font-semibold"
+              : "hover:bg-gray-100 text-gray-800"
+          }`}
+      >
+        {link.name}
+      </Link>
+    </li>
+  ))}
+</ul>
+
     </aside>
   );
 }

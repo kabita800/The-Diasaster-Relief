@@ -6,7 +6,7 @@ import PublicLayout from "./components/PublicLayout";
 import Home from "./pages/public/Home";
 import Aboutus from "./pages/public/Aboutus";
 import Contact from "./pages/public/Contact";
-import History from "./pages/public/History";
+import HelpForm from "./pages/public/HelpForm";
 
 import Dashboard from "./pages/dashboard/Dashboard";
 import Disasters from "./pages/dashboard/Disasters";
@@ -22,7 +22,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
-         <Route path="/history" element={<History />} />
+         <Route path="/helpform" element={<HelpForm />} />
       </Route>
 
       {/* Dashboard */}
