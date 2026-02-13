@@ -2,7 +2,7 @@ export default function Disasters() {
   return (
     <div className="flex-1 p-10 bg-gray-100 min-h-screen">
       {/* Page Title */}
-      <h1 className="text-2xl font-semibold mb-8">Disaster</h1>
+      <h1 className="text-3xl font-semibold mb-8 ">Disaster</h1>
 
       {/* Table Container */}
       <div className="bg-white rounded-2xl shadow-sm p-6">

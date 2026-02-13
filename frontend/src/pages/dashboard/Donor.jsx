@@ -6,7 +6,7 @@ export default function Donor() {
     <div className="flex-1 p-10 bg-gray-100 min-h-screen">
       
       {/* Page Title */}
-      <h1 className="text-2xl font-semibold mb-8">Victims</h1>
+      <h1 className="text-2xl font-semibold mb-8">Donors</h1>
 
       {/* Table Container */}
       <div className="bg-white rounded-2xl shadow-sm p-6">
@@ -32,7 +32,7 @@ export default function Donor() {
             <tbody>
               <tr>
                 <td colSpan="9" className="text-center py-10 text-gray-400">
-                  No victims found.
+                  No Donors found.
                 </td>
               </tr>
             </tbody>

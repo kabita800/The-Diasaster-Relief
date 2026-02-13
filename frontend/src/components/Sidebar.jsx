@@ -13,7 +13,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 bg-white border-r shadow-sm flex flex-col">
+    <aside className="w-50 bg-white border-r shadow-sm flex flex-col">
       <div className="p-6 font-bold text-xl text-teal-700 ">Dashboard</div>
      <ul className="flex-1 px-4 space-y-2 flex flex-col items-start">
   {links.map((link) => (

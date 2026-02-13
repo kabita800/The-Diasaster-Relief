@@ -2,8 +2,8 @@ import React from "react"
 
 const HelpForm = () => {
     return (
-        <div>
-            Hello
+        <div className="bg-green-800">
+            Hello this is my help form 
         </div>
     )
 }

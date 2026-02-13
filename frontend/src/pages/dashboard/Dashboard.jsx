@@ -70,7 +70,7 @@ export default function Dashboard() {
         </div>
 
         {/* Charts Section */}
-        <h2 className="text-xl font-semibold mb-4">Charts</h2>
+        <h2 className="text-2xl text-center font-bold mb-4">Charts</h2>
 
         <div className="grid grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-2xl shadow-md">
