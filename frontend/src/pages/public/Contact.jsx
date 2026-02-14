@@ -110,24 +110,24 @@ const Contact = () => {
           {/* Right - Contact Info */}
           <div className="text-white rounded-xl p-6 space-y-3">
             
-           <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full  rounded-lg border-2 border-gray-200">
             <p className="p-3 text-2xl text-center text-black font-bold">police Emergency hotline</p>
             <p className="text-center pb-3 text-black text-2xl">100/101</p>
            </div>
 
-          <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
+          <div className="h-100vh w-full  rounded-lg border-2 border-gray-200">
             <p className="p-3 text-2xl text-center text-black font-bold">Ambulance</p>
             <p className="text-center pb-3 text-black text-2xl">9873637221</p>
            </div>
 
 
-           <div className="h-100vh w-full   rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full   rounded-lg border-2 border-gray-200">
             <p className="p-3 text-2xl text-center text-black font-bold">Fire Brigade</p>
             <p className="text-center pb-3 text-black text-2xl">9836243541</p>
            </div>
            
 
-           <div className="h-100vh w-full  rounded-lg border-2 border-black shadow-xl">
+           <div className="h-100vh w-full  rounded-lg border-2 border-gray-200">
             <p className="p-3 text-2xl text-center text-black font-bold">Rescue Teams</p>
             <p className="text-center pb-3 text-black text-2xl">9812876543</p>
            </div>

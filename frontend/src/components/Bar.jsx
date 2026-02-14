@@ -25,14 +25,14 @@ export default function Bar() {
         </NavLink>
 
         <NavLink
-          to="/helpform"
+          to="/donationform"
           className={({ isActive }) =>
             isActive ?
               "font-bold text-gray-600 border-b-3 border-teal-700"
             : "text-gray-600 font-semibold transition hover:text-gray-800 border-teal-700"
           }
         >
-          HelpForm
+          DonationForm
         </NavLink>
 
         <NavLink

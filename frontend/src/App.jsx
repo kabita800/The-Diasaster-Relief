@@ -6,13 +6,14 @@ import PublicLayout from "./components/PublicLayout";
 import Home from "./pages/public/Home";
 import Aboutus from "./pages/public/Aboutus";
 import Contact from "./pages/public/Contact";
-import HelpForm from "./pages/public/HelpForm";
+import HelpForm from "./pages/public/DonationForm";
 
 import Dashboard from "./pages/dashboard/Dashboard";
 import Disasters from "./pages/dashboard/Disasters";
 import Mails from "./pages/dashboard/Mails";
 import Victim from "./pages/dashboard/Victim";
 import Donor from "./pages/dashboard/Donor";
+import DonationForm from "./pages/public/DonationForm";
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
-         <Route path="/helpform" element={<HelpForm />} />
+         <Route path="/donationform" element={<DonationForm />} />
       </Route>
 
       {/* Dashboard */}
