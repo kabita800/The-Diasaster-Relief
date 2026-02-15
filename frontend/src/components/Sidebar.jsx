@@ -7,9 +7,9 @@ export default function Sidebar() {
   const links = [
     { name: "Dashboard", path: "/dashboard" },
     { name: "Disasters", path: "/dashboard/disasters" },
-    { name: "Mails", path: "/dashboard/mails" },
     { name: "Victim", path: "/dashboard/victim" },
     { name: "Donor", path: "/dashboard/donor" },
+    { name: "Mails", path: "/dashboard/mails" },
   ];
 
   return (

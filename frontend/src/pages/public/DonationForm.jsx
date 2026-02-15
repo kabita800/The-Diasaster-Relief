@@ -51,7 +51,6 @@ export default function DonationForm() {
 
                 <select className="input">
                   <option>Select Donation Type</option>
-                  <option>Money</option>
                   <option>Food</option>
                   <option>Clothes</option>
                   <option>Medical Supplies</option>

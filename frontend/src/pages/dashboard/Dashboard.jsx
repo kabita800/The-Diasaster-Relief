@@ -41,11 +41,12 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="min-h-screen w-full bg-gray-100 flex overflow-x-hidden">
+
       {/* Sidebar */}
       
       {/* Main Content */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-3">
         <h1 className="text-3xl font-bold mb-6 text-center">Disasters</h1>
 
         {/* Disaster Cards */}
@@ -62,7 +63,7 @@ export default function Dashboard() {
 
               <div className="mt-3 text-2xl font-medium">0</div>
 
-              <button className="mt-4 text-sm underline text-gray-600 hover:text-cyan-500">
+              <button className="mt-4 text-sm underline text-gray-600 hover:text-teal-700">
                 View all
               </button>
             </div>

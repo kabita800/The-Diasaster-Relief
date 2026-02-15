@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Victim() {
   return (
-    <div className="flex-1 p-10 bg-gray-100 min-h-screen">
+    <div className="flex-1 bg-gray-100 min-h-screen">
       
       {/* Page Title */}
-      <h1 className="text-2xl font-semibold mb-8">Victims</h1>
+    
 
       {/* Table Container */}
       <div className="bg-white rounded-2xl shadow-sm p-6">
@@ -18,11 +18,11 @@ export default function Victim() {
                 <th className="py-3 font-medium">ID</th>
                 <th className="font-medium">Full Name</th>
                 <th className="font-medium">E-mail</th>
-                <th className="font-medium">City</th>
-                <th className="font-medium">District</th>
                 <th className="font-medium">Province</th>
-                <th className="font-medium">NIC</th>
-                <th className="font-medium">Address</th>
+                <th className="font-medium">District</th>
+                <th className="font-medium">City</th>
+                <th className="font-medium">Date</th>
+                <th className="font-medium">Time</th>
                 <th className="font-medium text-center">Actions</th>
               </tr>
             </thead>
