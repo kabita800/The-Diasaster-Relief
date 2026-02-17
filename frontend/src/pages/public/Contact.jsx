@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,7 +41,7 @@ const Contact = () => {
             className="max-w-lg mx-auto bg-white p-8 mb-30 rounded-xl shadow space-y-6 "
           >
             {/* Heading */}
-            <h3 className="text-2xl font-bold text-gray-800 text-center">
+            <h3 className="text-2xl font-bold text-gray-800 text-center mb-2">
               Send Us a Message
             </h3>
             <p className="text-gray-600 text-center text-sm italic">
@@ -143,6 +144,8 @@ const Contact = () => {
 
         </div>
       </div>
+
+
       <footer className="w-full bg-white text-white text-center py-6 mt-[400px]">
     {/* your existing footer content */}
   </footer>

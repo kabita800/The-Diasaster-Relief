@@ -10,6 +10,7 @@ export default function Sidebar() {
     { name: "Victim", path: "/dashboard/victim" },
     { name: "Donor", path: "/dashboard/donor" },
     { name: "Mails", path: "/dashboard/mails" },
+    { name: "DeliveryTrack", path: "/dashboard/deliverytrack" },
   ];
 
   return (
@@ -20,7 +21,7 @@ export default function Sidebar() {
     <li key={link.name}>
       <Link
         to={link.path}
-        className={`inline-flex w-fit px-12 py-2 rounded-lg transition 
+        className={`inline-flex w-fit px-8 py-2 rounded-lg transition 
           ${
             activeItem === link.path
               ? "bg-teal-700 text-white font-semibold"

@@ -9,12 +9,12 @@ export default function DonationForm() {
         <img
           src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
           alt="Waterfall"
-          className="w-full h-full rounded-3xl"
+          className="w-full h-full rounded-bl-3xl rounded-tl-3xl"
         />
       </div>
 
       {/* RIGHT FORM SECTION */}
-      <div className=" bg-white flex items-center justify-center p-6 rounded-3xl">
+      <div className=" bg-white flex items-center justify-center p-6 rounded-tr-3xl rounded-br-3xl">
         <div className="w-full max-w-lg">
           <h2 className="text-2xl font-bold text-center mb-4">
             Help & Donation Form
