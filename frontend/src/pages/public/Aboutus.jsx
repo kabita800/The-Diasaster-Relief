@@ -13,17 +13,7 @@ const Aboutus = () => {
             <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-white">
               <span class="font-semibold text-white"> THEDisasterRelief</span>{" "}
-              was created to make borrowing books simple for students and
-              community members. It helps track books, borrowing history, and
-              supports librarians in managing the catalog efficiently. This
-              Library Management System is designed to help small libraries,
-              schools, and community centers manage their book catalog and
-              borrowing process. Borrowers can browse and borrow books easily,
-              while librarians can efficiently track records and maintain the
-              catalog. Our mission is to make reading accessible to everyone and
-              provide a seamless experience for both readers and librarians. We
-              aim to promote learning, knowledge sharing, and convenience
-              through technology.
+            dedicated disaster relief platform committed to providing timely support and assistance to communities affected by natural and man-made disasters. Our mission is to connect donors, volunteers, and victims through a transparent and reliable system that ensures help reaches those who need it most. By combining technology, compassion, and coordinated action, we aim to make relief efforts faster, more organized, and more impactful. Together, we stand in solidarity with affected communities and work towards rebuilding lives with dignity and hope.
             </p>
           </div>
 
@@ -33,8 +23,7 @@ const Aboutus = () => {
               <h3 class="text-2xl font-semibold mb-2">Our Mission</h3>
               <hr class="w-16 mx-auto border-b-4 border-red-600 mb-4" />
               <p class="text-gray-600 leading-relaxed">
-                To make reading accessible and convenient for everyone while
-                supporting librarians in efficient book management.
+                To provide fast, transparent, and reliable support to communities affected by disasters through one trusted platform
               </p>
             </div>
 
@@ -43,8 +32,7 @@ const Aboutus = () => {
               <h3 class="text-2xl font-semibold mb-2">Our Vision</h3>
               <hr class="w-16 mx-auto border-b-4 border-yellow-500 mb-4" />
               <p class="text-gray-600 leading-relaxed">
-                To create a community where knowledge is easily shared and
-                libraries are efficiently managed through technology.
+               To build a safer and more resilient society where help reaches every affected person quickly and efficiently during times of crisis.
               </p>
             </div>
 
@@ -53,8 +41,7 @@ const Aboutus = () => {
               <h3 class="text-2xl font-semibold mb-2">Our Goals</h3>
               <hr class="w-16 mx-auto border-b-4 border-green-600 mb-4" />
               <p class="text-gray-600 leading-relaxed">
-                Enhance library services, simplify borrowing, track records
-                effectively, and promote reading habits among all members.
+                Maintain transparency in donations and relief distribution also Ensure timely and organized disaster response
               </p>
             </div>
           </div>
