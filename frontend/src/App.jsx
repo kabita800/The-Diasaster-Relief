@@ -4,6 +4,8 @@ import Layout from "./components/Layout";
 import PublicLayout from "./components/PublicLayout";
 
 import Home from "./pages/public/Home";
+import Login from "./pages/authentication/Login";
+import Register from "./pages/authentication/Register";
 import Aboutus from "./pages/public/Aboutus";
 import Contact from "./pages/public/Contact";
 
@@ -22,6 +24,8 @@ export default function App() {
       {/* Public */}
       <Route element={<PublicLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
          <Route path="/donationform" element={<DonationForm />} />
