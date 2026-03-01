@@ -24,14 +24,16 @@ export default function App() {
       {/* Public */}
       <Route element={<PublicLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
          <Route path="/donationform" element={<DonationForm />} />
           <Route path="/helpform" element={<HelpForm />} />
       </Route>
 
+      <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        
       {/* Dashboard */}
       <Route path="/dashboard" element={<Layout />}>
         <Route index element={<Dashboard />} />
