@@ -12,7 +12,7 @@ export default function Login() {
           Welcome Back
         </h2>
         <h3 className="text-center text-teal-600 italic text-sm">
-          Please enter your details
+          Please enter your details!
         </h3>
       </div>
 
