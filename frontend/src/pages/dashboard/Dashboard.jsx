@@ -14,7 +14,7 @@ import {
   Cell,
 } from "recharts";
 
-//dashbaord page
+
 
 export default function Dashboard() {
   const location = useLocation();
