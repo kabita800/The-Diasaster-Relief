@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//dashboard page
 export default function Donor() {
   return (
     <div className="flex-1 bg-gray-100 min-h-screen">
