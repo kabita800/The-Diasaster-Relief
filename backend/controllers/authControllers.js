@@ -1,6 +1,6 @@
-import bycrypt from "bcrypt";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import prisma from "../prisma/prismaClient.js";
+import prisma from "../DB/prisma.js";
 
 export const signUp = async (req, res) => {
   try {
