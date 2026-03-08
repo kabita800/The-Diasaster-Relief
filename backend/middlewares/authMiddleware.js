@@ -1,9 +1,9 @@
-import e from "cors";
+import cors from "cors";
 import jwt from "jsonwebtoken";
 
 export const authMiddleware = (req, res, next) => {
     try {
-        const token = req.heaaders.authoriation?.split("")[1];
+        const token = req.headers.authorization?.split(" ")[1];
         if (!token) {
             return 
             res.status(401)
@@ -19,4 +19,3 @@ export const authMiddleware = (req, res, next) => {
         .json({ message: "Invalid token"});
     }
 };
-export default authMiddleware

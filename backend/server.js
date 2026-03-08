@@ -1,6 +1,7 @@
-const express = require("express");
+import express from "express";
+import prisma from "./DB/prisma.js";
 const app = express();
-const prisma = require("./DB/prisma");
+
 
 const PORT = 5000;
 app.get("/", (req,res) => {
