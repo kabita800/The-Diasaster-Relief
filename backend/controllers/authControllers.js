@@ -36,7 +36,7 @@ export const register = async (req, res) => {
         role,
       },
     });
-
+    console.log("User registered:", user);
     res.json({
       id: user.id,
       name: user.name,
@@ -66,6 +66,7 @@ export const login = async (req, res) => {
     }
 
     const match = await bcrypt.compare(password, user.password);
+    console.log("Password match:", match);
 
     if (!match) {
       return res.status(400).json({ msg: "Invalid credentials" });
