@@ -12,4 +12,11 @@ model User {
   name     String
   email    String @unique
   password String
+  role     Role   @default(VICTIM)
+}
+
+enum Role {
+  RESCUE_TEAM
+  DONOR
+  VICTIM
 }
