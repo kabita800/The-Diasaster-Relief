@@ -54,7 +54,6 @@ export const register = async (req, res) => {
 // Login Controller
 export const login = async (req, res) => {
   try {
-
     const { email, password } = req.body;
 
     const user = await prisma.user.findUnique({
@@ -66,8 +65,6 @@ export const login = async (req, res) => {
     }
 
     const match = await bcrypt.compare(password, user.password);
-    console.log("Password match:", match);
-
     if (!match) {
       return res.status(400).json({ msg: "Invalid credentials" });
     }
@@ -82,12 +79,14 @@ export const login = async (req, res) => {
       { expiresIn: "1h" }
     );
 
+    // Return token and full user info
     res.json({
       token,
       user: {
         id: user.id,
         name: user.name,
-        role: user.role,
+        email: user.email,     // ✅ Add email here
+        role: user.role.toLowerCase(), // optional: lowercase for frontend
       },
     });
 

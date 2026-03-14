@@ -60,9 +60,9 @@ export default function Register() {
   };
 
   return (
-    <div className="bg-gray-100 flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="bg-gray-100 flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8 ">
 
-      <div className="bg-white mx-110 pb-6">
+      <div className="bg-white w-full max-w-md mx-auto pb-6 px-6 sm:px-8 rounded-lg shadow-md">
 
         <div className="sm:mx-auto sm:w-full sm:max-w-sm text-center">
           <h2 className="mt-10 text-3xl font-bold tracking-tight text-black">

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
+import RoleRoute from "./components/RoleRoute";
 
 import Layout from "./components/Layout";
 import PublicLayout from "./components/PublicLayout";
@@ -23,20 +24,44 @@ export default function App() {
   return (
     <AuthProvider>
       <Routes>
-        {/* Public */}
+
+        {/* ================= PUBLIC PAGES ================= */}
         <Route element={<PublicLayout />}>
+
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/donationform" element={<DonationForm />} />
-          <Route path="/helpform" element={<HelpForm />} />
+
+          {/* DONOR ONLY */}
+          <Route
+            path="/donationform"
+            element={
+              <RoleRoute allowedRoles={["donor"]}>
+                <DonationForm />
+              </RoleRoute>
+            }
+          />
+
+          {/* VICTIM ONLY */}
+          <Route
+            path="/helpform"
+            element={
+              <RoleRoute allowedRoles={["victim"]}>
+                <HelpForm />
+              </RoleRoute>
+            }
+          />
+
         </Route>
 
+
+        {/* ================= AUTH ================= */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Dashboard */}
+
+        {/* ================= DASHBOARD ================= */}
         <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="disasters" element={<Disasters />} />
@@ -45,7 +70,8 @@ export default function App() {
           <Route path="deliverytrack" element={<DeliveryTrack />} />
         </Route>
 
-        {/* 404 */}
+
+        {/* ================= 404 PAGE ================= */}
         <Route
           path="*"
           element={
@@ -54,6 +80,7 @@ export default function App() {
             </h1>
           }
         />
+
       </Routes>
     </AuthProvider>
   );
