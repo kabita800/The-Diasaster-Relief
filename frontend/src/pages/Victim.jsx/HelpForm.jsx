@@ -1,6 +1,48 @@
+<<<<<<< HEAD
 import React from "react";
 
 const HelpForm = () => {
+=======
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+const HelpForm = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    province: "",
+    district: "",
+    city: "",
+    date: new Date().toISOString().split("T")[0],
+    time: new Date().toTimeString().split(" ")[0].slice(0, 5)
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/api/victims", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+      if (res.ok) {
+        alert("Help request submitted successfully! Wait for admin approval.");
+        navigate("/dashboard/victim");
+      } else {
+        alert("Failed to submit data.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Error submitting form");
+    }
+  };
+
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   return (
     <div className="min-h-screen bg-gray-100 py-10 ">
       {/* Top Logo */}
@@ -19,7 +61,11 @@ const HelpForm = () => {
       </div>
 
       {/* Form */}
+<<<<<<< HEAD
       <form className="">
+=======
+      <form onSubmit={handleSubmit} className="">
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 
         {/* Full Name */}
         <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -27,6 +73,13 @@ const HelpForm = () => {
             <label className="block mb-1 font-medium">Full Name</label>
             <input
               type="text"
+<<<<<<< HEAD
+=======
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              required
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
               className="w-full p-3 border rounded-md"
               placeholder="Full Name"
             />
@@ -36,6 +89,13 @@ const HelpForm = () => {
             <label className="block mb-1 font-medium">Email</label>
             <input
               type="email"
+<<<<<<< HEAD
+=======
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
               className="w-full p-3 border rounded-md"
               placeholder="Email Address"
             />
@@ -76,6 +136,7 @@ const HelpForm = () => {
           </div>
 
           <div>
+<<<<<<< HEAD
   <label className="block mb-1 font-medium">Province</label>
   <select
     className="w-full p-3 border rounded-md"
@@ -90,15 +151,47 @@ const HelpForm = () => {
     <option value="7">Province 7 (Sudurpashchim)</option>
   </select>
 </div>
+=======
+            <label className="block mb-1 font-medium">Province</label>
+            <select
+              name="province"
+              value={formData.province}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-md"
+            >
+              <option value="">Select Province</option>
+              <option value="Province 1 (Koshi)">Province 1 (Koshi)</option>
+              <option value="Province 2 (Madhesh)">Province 2 (Madhesh)</option>
+              <option value="Province 3 (Bagmati)">Province 3 (Bagmati)</option>
+              <option value="Province 4 (Gandaki)">Province 4 (Gandaki)</option>
+              <option value="Province 5 (Lumbini)">Province 5 (Lumbini)</option>
+              <option value="Province 6 (Karnali)">Province 6 (Karnali)</option>
+              <option value="Province 7 (Sudurpashchim)">Province 7 (Sudurpashchim)</option>
+            </select>
+          </div>
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 
         </div>
 
         {/* District + City */}
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div>
+<<<<<<< HEAD
   <label className="block mb-1 font-medium">District</label>
   <select className="w-full p-3 border rounded-md">
     <option value="">Select District</option>
+=======
+            <label className="block mb-1 font-medium">District</label>
+            <select
+              name="district"
+              value={formData.district}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-md"
+            >
+              <option value="">Select District</option>
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 
     {/* Province 1 */}
     <option>Bhojpur</option>
@@ -198,6 +291,13 @@ const HelpForm = () => {
             <label className="block mb-1 font-medium">City / Village</label>
             <input
               type="text"
+<<<<<<< HEAD
+=======
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
+              required
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
               className="w-full p-3 border rounded-md"
               placeholder="City or Village"
             />
@@ -265,7 +365,11 @@ const HelpForm = () => {
 </div>
 
         {/* Submit Button */}
+<<<<<<< HEAD
         <button className="w-full bg-teal-700 text-white py-3 rounded-md text-lg font-semibold hover:bg-teal-900 transition">
+=======
+        <button type="submit" className="w-full bg-teal-700 text-white py-3 rounded-md text-lg font-semibold hover:bg-teal-900 transition mt-6">
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
           Submit Request
         </button>
       </form>

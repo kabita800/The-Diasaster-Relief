@@ -14,13 +14,21 @@ export default function Bar() {
   return (
     <div className="w-full flex items-center justify-between px-6 lg:px-12 py-3 border-b border-gray-300 bg-white shadow-sm sticky top-0 z-50">
 
+<<<<<<< HEAD
       {/* LOGO */}
+=======
+     
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
       <h1 className="font-bold text-xl lg:text-2xl text-teal-800 leading-tight">
         THEDisaster
         <span className="block text-sm lg:text-base -mt-1">RELIEF</span>
       </h1>
 
+<<<<<<< HEAD
       {/* NAVIGATION */}
+=======
+      
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
       <div className="flex items-center gap-6 flex-wrap justify-center flex-1 mx-6">
         <NavLink to="/" className={navStyle}></NavLink>
         <NavLink to="/dashboard" className={navStyle}>Dashboard</NavLink>

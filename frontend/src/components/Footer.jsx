@@ -7,7 +7,11 @@ const Footer = () => {
    <footer className="bg-teal-700 text-white pt-3">
       <div className="max-w-7xl mx-auto px-2 py-5 grid md:grid-cols-4 gap-8">
 
+<<<<<<< HEAD
         {/* About */}
+=======
+        
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
         <div>
           <h3 className="text-xl font-bold mb-3 pl-10">THEDisaster RELIEF</h3>
           <p className="text-white pl-10">
@@ -32,7 +36,11 @@ resources, and support, helping communities respond faster and recover effective
             </div>
 
 
+<<<<<<< HEAD
          {/* Quick Links */}
+=======
+        
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
         <div>
           <h4 className="text-lg font-semibold mb-3 pl-10">Quick Links</h4>
           <ul className="space-y-2 pl-10">
@@ -75,7 +83,11 @@ resources, and support, helping communities respond faster and recover effective
 
       </div>
 
+<<<<<<< HEAD
       {/* Bottom Bar */}
+=======
+      
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
       <div className="bg-teal-700 text-center py-4 text-sm">
         © 2026 Disaster Relief Management. All rights reserved.
       </div>

@@ -19,4 +19,42 @@ enum Role {
   RESCUE_TEAM
   DONOR
   VICTIM
+<<<<<<< HEAD
+=======
+  ADMIN
+}
+
+model Disaster {
+  id           Int      @id @default(autoincrement())
+  disasterType String
+  province     String
+  district     String
+  city         String
+  date         String
+  time         String
+}
+
+model Victim {
+  id       Int    @id @default(autoincrement())
+  fullName String
+  email    String
+  province String
+  district String
+  city     String
+  date     String
+  time     String
+  isApproved Boolean @default(false)
+}
+
+model Donor {
+  id       Int    @id @default(autoincrement())
+  fullName String
+  email    String
+  province String
+  district String
+  city     String
+  date     String
+  time     String
+  isApproved Boolean @default(false)
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 }

@@ -1,0 +1,62 @@
+﻿[dotenv@17.3.1] injecting env (0) from .env -- tip: ΓÜÖ∩╕Å  write to custom object with { processEnv: myObject }
+node : D:\project\gitre
+po\project1.2025\ctf-wr
+iteups\The-Diasaster-Re
+lief-main\backend\node_
+modules\.prisma\client\
+default.js:43
+At line:1 char:1
++ node server.js 2>&1 
+| Out-File -FilePath 
+out2.log -Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (D:\project\gi   
+ tr...t\default.js:    
+43:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+    throw new 
+Error('@prisma/client 
+did not initialize 
+yet. Please run 
+"prisma generate" and 
+try to import it 
+again.');
+          ^
+
+Error: @prisma/client 
+did not initialize 
+yet. Please run 
+"prisma generate" and 
+try to import it again.
+    at new 
+PrismaClient (D:\projec
+t\gitrepo\project1.2025
+\ctf-writeups\The-Diasa
+ster-Relief-main\backen
+d\node_modules\.prisma\
+client\default.js:43:11
+)
+    at file:///D:/proje
+ct/gitrepo/project1.202
+5/ctf-writeups/The-Dias
+aster-Relief-main/backe
+nd/DB/prisma.js:6:16
+    at ModuleJob.run (n
+ode:internal/modules/es
+m/module_job:274:25)
+    at async onImport.t
+racePromise.__proto__ (
+node:internal/modules/e
+sm/loader:644:26)
+    at async asyncRunEn
+tryPointWithESMLoader (
+node:internal/modules/r
+un_main:116:5)
+
+Node.js v22.15.1

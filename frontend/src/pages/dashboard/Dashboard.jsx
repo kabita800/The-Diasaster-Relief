@@ -1,5 +1,9 @@
 import { Bookmark } from "lucide-react";
+<<<<<<< HEAD
 import { useState } from "react";
+=======
+import { useState, useEffect } from "react";
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 import { Link, useLocation } from "react-router-dom";
 
 import {
@@ -18,6 +22,7 @@ import {
 
 export default function Dashboard() {
   const location = useLocation();
+<<<<<<< HEAD
 
   const activeItem = location.pathname;
 
@@ -35,6 +40,27 @@ export default function Dashboard() {
     { name: "Fire", cases: 25 },
     { name: "Cyclone", cases: 15 },
     { name: "Landslide", cases: 20 },
+=======
+  const activeItem = location.pathname;
+
+  const [disasterData, setDisasterData] = useState([]);
+  const [totals, setTotals] = useState({ disasters: 0, victims: 0, donors: 0 });
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/stats")
+      .then(res => res.json())
+      .then(data => {
+        setDisasterData(data.chartData || []);
+        setTotals(data.totals || { disasters: 0, victims: 0, donors: 0 });
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  const topCards = [
+    { title: "Total Disasters", count: totals.disasters },
+    { title: "Registered Victims", count: totals.victims },
+    { title: "Registered Donors", count: totals.donors },
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   ];
 
   const pieData = [
@@ -51,14 +77,21 @@ export default function Dashboard() {
       <main className="flex-1 p-3">
         <h1 className="text-3xl font-bold mb-6 text-center">Disasters</h1>
 
+<<<<<<< HEAD
         {/* Disaster Cards */}
         <div className="grid grid-cols-3 gap-8 mb-10">
           {disasters.map((item, index) => (
+=======
+        {/* Dynamic Data Cards */}
+        <div className="grid grid-cols-3 gap-8 mb-10">
+          {topCards.map((item, index) => (
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             <div
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
             >
               <div className="flex justify-between items-center">
+<<<<<<< HEAD
                 <h2 className="font-bold text-lg">{item}</h2>
                 <span className="text-sm text-gray-500">0.00%</span>
               </div>
@@ -68,6 +101,11 @@ export default function Dashboard() {
               <button className="mt-4 text-sm underline text-gray-600 hover:text-teal-700">
                 View all
               </button>
+=======
+                <h2 className="font-bold text-lg">{item.title}</h2>
+              </div>
+              <div className="mt-3 text-2xl font-medium">{item.count}</div>
+>>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             </div>
           ))}
         </div>
