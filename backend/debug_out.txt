@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Site Admin",
+      "email": "admin@example.com",
+      "password": "$2b$10$V5Gua6csB3xgl4jvFjfltuu/eoIyMH70JwzmC8sh0zni9iAd/GFpG",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "name": "khum",
+      "email": "khum@gmail.com",
+      "password": "$2b$10$clNcBVIZ8E6Yj8nFlBwjg.umNEuhktFAQWYsgGcv5ZFRKGjXI4v8W",
+      "role": "VICTIM"
+    },
+    {
+      "id": 3,
+      "name": "khum",
+      "email": "khumdonor@gmail.com",
+      "password": "$2b$10$b/u4HF84swybvaWnhRp8jeXm1cPhCGycUSVkbKP5uDW8b9Rcmu5VO",
+      "role": "DONOR"
+    },
+    {
+      "id": 4,
+      "name": "donor",
+      "email": "donor@gami.com",
+      "password": "$2b$10$RZLHiPFdtN1ZSxviMjyRSuPJYX7ozzALDjR7vKCerxgVpcT2t.mly",
+      "role": "DONOR"
+    }
+  ],
+  "donors": [
+    {
+      "id": 1,
+      "fullName": "Alice Parker",
+      "email": "alice@example.com",
+      "province": "California",
+      "district": "Los Angeles",
+      "city": "LA",
+      "date": "2026-02-01",
+      "time": "10:00 AM",
+      "isApproved": false
+    },
+    {
+      "id": 2,
+      "fullName": "Bob Builder",
+      "email": "bob@example.com",
+      "province": "Texas",
+      "district": "Austin",
+      "city": "Austin",
+      "date": "2026-03-05",
+      "time": "11:15 AM",
+      "isApproved": false
+    },
+    {
+      "id": 3,
+      "fullName": "Carlos Ray",
+      "email": "carlos@example.com",
+      "province": "Ontario",
+      "district": "Toronto",
+      "city": "Toronto",
+      "date": "2026-03-10",
+      "time": "09:20 AM",
+      "isApproved": true
+    },
+    {
+      "id": 4,
+      "fullName": "donor",
+      "email": "donor@gmail.com",
+      "province": "koshi",
+      "district": "jhapa",
+      "city": "surunga",
+      "date": "2026-03-20",
+      "time": "15:14",
+      "isApproved": false
+    }
+  ],
+  "victims": [
+    {
+      "id": 1,
+      "fullName": "John Doe",
+      "email": "john@example.com",
+      "province": "Florida",
+      "district": "Miami-Dade",
+      "city": "Miami",
+      "date": "2026-01-22",
+      "time": "14:30 PM",
+      "isApproved": false
+    },
+    {
+      "id": 2,
+      "fullName": "Jane Smith",
+      "email": "jane@example.com",
+      "province": "New South Wales",
+      "district": "Blue Mountains",
+      "city": "Katoomba",
+      "date": "2026-01-10",
+      "time": "16:45 PM",
+      "isApproved": false
+    },
+    {
+      "id": 3,
+      "fullName": "Ali Khan",
+      "email": "ali@example.com",
+      "province": "Dhaka Division",
+      "district": "Sylhet",
+      "city": "Sylhet",
+      "date": "2026-03-01",
+      "time": "08:00 AM",
+      "isApproved": true
+    },
+    {
+      "id": 4,
+      "fullName": "khum",
+      "email": "khum@gmail.com",
+      "province": "Province 1 (Koshi)",
+      "district": "Ilam",
+      "city": "ktm",
+      "date": "2026-03-26",
+      "time": "08:56",
+      "isApproved": true
+    },
+    {
+      "id": 5,
+      "fullName": "khum",
+      "email": "khum@yahoo.com",
+      "province": "Province 1 (Koshi)",
+      "district": "Sunsari",
+      "city": "dharan",
+      "date": "2026-03-26",
+      "time": "08:59",
+      "isApproved": false
+    }
+  ],
+  "notifications": []
+}

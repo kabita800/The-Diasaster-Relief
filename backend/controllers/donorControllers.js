@@ -14,6 +14,14 @@ export const createDonor = async (req, res) => {
     const donor = await prisma.donor.create({
       data: req.body
     });
+    
+    await prisma.notification.create({
+      data: {
+        targetRole: "admin",
+        message: `New donation request received from ${donor.fullName}`
+      }
+    });
+
     res.json(donor);
   } catch (err) {
     console.error(err);
@@ -36,6 +44,19 @@ export const updateDonor = async (req, res) => {
       where: { id: Number(req.params.id) },
       data: req.body
     });
+
+    if (req.body.isApproved === true) {
+      const user = await prisma.user.findUnique({ where: { email: updated.email } });
+      if (user) {
+        await prisma.notification.create({
+          data: {
+            userId: user.id,
+            message: `Good news! Your donation request has been approved.`
+          }
+        });
+      }
+    }
+
     res.json(updated);
   } catch (err) {
     res.status(500).json({ msg: "Server error" });

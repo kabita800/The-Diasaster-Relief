@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import Img from "/src/assets/volunteers-giving-donation-other-people_258153-515.avif";
-export default function DonationForm() {
-=======
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Img from "/src/assets/volunteers-giving-donation-other-people_258153-515.avif";
@@ -43,7 +38,6 @@ export default function DonationForm() {
     }
   };
 
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   return (
     <div className="min-h-screen grid md:grid-cols-2 p-8 bg-gray-100 ">
       
@@ -62,90 +56,24 @@ export default function DonationForm() {
           <h2 className="text-2xl font-bold text-center mb-4">
             Help & Donation Form
           </h2>
-<<<<<<< HEAD
-          <form className="space-y-6">
-=======
           <form onSubmit={handleSubmit} className="space-y-6">
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             <div>
               <h3 className="text-lg font-semibold mb-3">Donor Details</h3>
 
               <div className="space-y-4">
                 <input
                   type="text"
-<<<<<<< HEAD
-                  placeholder="Donor's Full Name"
-                  className="input"
-=======
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
                   required
                   placeholder="Donor's Full Name"
                   className="input w-full p-3 border rounded-md"
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
                     type="text"
-<<<<<<< HEAD
-                    placeholder="Donor's Mobile Number"
-                    className="input"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Donor's Email"
-                    className="input"
-                  />
-                </div>
-
-                <input
-                  type="text"
-                  placeholder="Home Address"
-                  className="input"
-                />
-
-                <select className="input">
-                  <option>Select Donation Type</option>
-                  <option>Food</option>
-                  <option>Clothes</option>
-                  <option>Medical Supplies</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-
-            {/* ================= VICTIM DETAILS ================= */}
-            <div>
-              <h3 className="text-lg font-semibold mb-3">Victim Details</h3>
-
-              <div className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Victim's Full Name"
-                  className="input"
-                />
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Victim's Mobile Number"
-                    className="input"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Victim's Email"
-                    className="input"
-                  />
-                </div>
-
-                <input
-                  type="text"
-                  placeholder="Victim's Address"
-                  className="input"
-                />
-=======
                     name="province"
                     value={formData.province}
                     onChange={handleChange}
@@ -184,18 +112,13 @@ export default function DonationForm() {
                     className="input w-full p-3 border rounded-md"
                   />
                 </div>
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
               </div>
             </div>
 
             {/* SUBMIT BUTTON */}
             <button
               type="submit"
-<<<<<<< HEAD
-              className="px-8 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-lg font-semibold transition mx-auto block"
-=======
               className="px-8 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-lg font-semibold transition mx-auto block w-full mt-6"
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             >
               Submit
             </button>

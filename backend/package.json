@@ -24,11 +24,8 @@
   "devDependencies": {
     "@types/node": "^25.4.0",
     "prisma": "^6.19.2"
-<<<<<<< HEAD
-=======
   },
   "prisma": {
     "seed": "node prisma/seed.js"
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   }
 }

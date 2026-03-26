@@ -19,6 +19,7 @@ export const AuthProvider = ({ children }) => {
       .then(data => {
         if (data?.role) {
           setUser({
+            id: data.id,
             name: data.name,
             email: data.email,
             role: data.role.toLowerCase(),

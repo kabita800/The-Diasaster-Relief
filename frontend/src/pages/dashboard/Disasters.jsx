@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-export default function Disasters() {
-=======
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 
@@ -53,7 +50,6 @@ export default function Disasters() {
       .then((data) => setDisasters(data))
       .catch((err) => console.error(err));
   }, []);
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   return (
     <div className="flex-1 bg-gray-100 min-h-screen">
       {/* Page Title */}
@@ -72,19 +68,6 @@ export default function Disasters() {
                 <th className="font-medium px-2 py-2">City</th>
                 <th className="font-medium px-2 py-2">Date</th>
                 <th className="font-medium px-2 py-2">Time</th>
-<<<<<<< HEAD
-                <th className="font-medium text-center px-2 py-2">Actions</th>
-              </tr>
-            </thead>
-
-            {/* Empty Body (Ready for Backend Data) */}
-            <tbody>
-              <tr>
-                <td colSpan="9" className="text-center py-10 text-gray-400">
-                  No disasters found.
-                </td>
-              </tr>
-=======
                 {user?.role === 'admin' && <th className="font-medium text-center px-2 py-2">Actions</th>}
               </tr>
             </thead>
@@ -134,7 +117,6 @@ export default function Disasters() {
                   </td>
                 </tr>
               )}
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             </tbody>
           </table>
         </div>

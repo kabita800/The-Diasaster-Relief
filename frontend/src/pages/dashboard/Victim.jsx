@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-export default function Victim() {
-=======
 import React, { useState, useEffect } from "react";
 import { useAuth } from '../../context/AuthContext';
 
@@ -68,7 +63,6 @@ export default function Victim() {
       .then(data => setVictims(data))
       .catch(err => console.error(err));
   }, []);
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   return (
     <div className="flex-1 bg-gray-100 min-h-screen">
       
@@ -91,19 +85,6 @@ export default function Victim() {
                 <th className="font-medium">City</th>
                 <th className="font-medium">Date</th>
                 <th className="font-medium">Time</th>
-<<<<<<< HEAD
-                <th className="font-medium text-center">Actions</th>
-              </tr>
-            </thead>
-
-            {/* Empty Body (Ready for Backend Data) */}
-            <tbody>
-              <tr>
-                <td colSpan="9" className="text-center py-10 text-gray-400">
-                  No victims found.
-                </td>
-              </tr>
-=======
                 {user?.role === 'admin' && <th className="font-medium text-center">Actions</th>}
               </tr>
             </thead>
@@ -158,7 +139,6 @@ export default function Victim() {
                   </td>
                 </tr>
               )}
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             </tbody>
 
           </table>

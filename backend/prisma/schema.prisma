@@ -19,8 +19,6 @@ enum Role {
   RESCUE_TEAM
   DONOR
   VICTIM
-<<<<<<< HEAD
-=======
   ADMIN
 }
 
@@ -56,5 +54,13 @@ model Donor {
   date     String
   time     String
   isApproved Boolean @default(false)
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
+}
+
+model Notification {
+  id         Int      @id @default(autoincrement())
+  userId     Int?     
+  targetRole String?  
+  message    String
+  isRead     Boolean  @default(false)
+  createdAt  DateTime @default(now())
 }

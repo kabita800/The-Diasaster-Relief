@@ -25,11 +25,7 @@ export default function App() {
     <AuthProvider>
       <Routes>
 
-<<<<<<< HEAD
         {/* ================= PUBLIC PAGES ================= */}
-=======
-        
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
         <Route element={<PublicLayout />}>
 
           <Route path="/" element={<Home />} />

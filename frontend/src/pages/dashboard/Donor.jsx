@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-//dashboard page
-export default function Donor() {
-=======
 import React, { useState, useEffect } from "react";
 import { useAuth } from '../../context/AuthContext';
 
@@ -70,7 +64,6 @@ export default function Donor() {
       .then(data => setDonors(data))
       .catch(err => console.error(err));
   }, []);
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
   return (
     <div className="flex-1 bg-gray-100 min-h-screen">
       
@@ -92,19 +85,6 @@ export default function Donor() {
                 <th className="font-medium">City</th>
                 <th className="font-medium">Date</th>
                 <th className="font-medium">Time</th>
-<<<<<<< HEAD
-                <th className="font-medium text-center">Actions</th>
-              </tr>
-            </thead>
-
-            {/* Empty Body (Ready for Backend Data) */}
-            <tbody>
-              <tr>
-                <td colSpan="9" className="text-center py-10 text-gray-400">
-                  No Donors found.
-                </td>
-              </tr>
-=======
                 {user?.role === 'admin' && <th className="font-medium text-center">Actions</th>}
               </tr>
             </thead>
@@ -159,7 +139,6 @@ export default function Donor() {
                   </td>
                 </tr>
               )}
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
             </tbody>
 
           </table>

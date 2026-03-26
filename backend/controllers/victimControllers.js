@@ -14,6 +14,14 @@ export const createVictim = async (req, res) => {
     const victim = await prisma.victim.create({
       data: req.body
     });
+
+    await prisma.notification.create({
+      data: {
+        targetRole: "admin",
+        message: `New victim help request received from ${victim.fullName}`
+      }
+    });
+
     res.json(victim);
   } catch (err) {
     console.error(err);
@@ -36,6 +44,19 @@ export const updateVictim = async (req, res) => {
       where: { id: Number(req.params.id) },
       data: req.body
     });
+
+    if (req.body.isApproved === true) {
+      const user = await prisma.user.findUnique({ where: { email: updated.email } });
+      if (user) {
+        await prisma.notification.create({
+          data: {
+            userId: user.id,
+            message: `Your help request has been approved and donors will be contacting you shortly.`
+          }
+        });
+      }
+    }
+
     res.json(updated);
   } catch (err) {
     res.status(500).json({ msg: "Server error" });

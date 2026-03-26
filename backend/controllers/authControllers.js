@@ -3,11 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 // Allowed Roles
-<<<<<<< HEAD
-const roles = ["RESCUE_TEAM", "DONOR", "VICTIM"];
-=======
 const roles = ["RESCUE_TEAM", "DONOR", "VICTIM", "ADMIN"];
->>>>>>> 4612e83 (Initialize project and add dashboard + form updates)
 
 // Register Controller
 export const register = async (req, res) => {
